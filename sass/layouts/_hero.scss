@@ -1,0 +1,43 @@
+.hero {  
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--brand-color-02);
+    background-image: 
+    linear-gradient(to right, 
+    var(--gradient-color-01), 
+    var(--gradient-color-02)), 
+    url(../images/hero-img-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    width: 604px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--background-color-01);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+  .hero__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    border-radius: 4px;
+    background-color: var(--brand-color-01);
+    border-style: none;
+    color: var(--background-color-01);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }

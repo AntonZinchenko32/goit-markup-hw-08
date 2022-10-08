@@ -1,0 +1,23 @@
+h1, h2, h3, p {
+    margin: 0;
+  }
+  .link {
+    text-decoration: none;
+    color: var(--text-color-01);
+  }
+  .list {
+    padding-left: 0px;
+    margin: 0;
+    list-style: none;
+  }
+ 
+  /* *****Change font-style in address section to normal***** */
+  .address__list {
+    font-style: normal;
+  }
+  /* Форматирование изображений */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

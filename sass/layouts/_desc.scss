@@ -1,0 +1,33 @@
+.desc {  
+    padding-bottom: 94px;
+  }
+  .desc__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .desc__list {
+    display: flex;
+  }
+  .desc__item {
+    @include right-indent (30px);
+  }
+  .desc__thumb {
+    position:relative;
+  }
+  .desc__label {
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    padding: 27px 0 27px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    font-weight: 700;
+    color:var(--background-color-01);
+    background-color: var(--label-color);
+  }

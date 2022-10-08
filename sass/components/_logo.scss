@@ -1,0 +1,16 @@
+
+.logo {
+    color: var(--brand-color-01);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+//   Два варыанта забарвлення, частини логотипа
+  .logo__part--black {
+    color: var(--text-color-01);
+  }
+  .logo__part--white {
+    color: var(--background-color-01);
+  }

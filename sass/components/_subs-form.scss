@@ -1,0 +1,46 @@
+/* Форма подписки на рассылку */
+.subs-form__label {
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: var(--background-color-01);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .subs-form__input {
+    width: 358px;
+    margin-right: 12px;
+    border-radius: 4px;
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color-01);
+    filter: drop-shadow(0px 4px 4px var(--shadow-color-08));
+    padding: 15px 16px;
+    color:var(--background-color-01);
+  
+    &::placeholder {
+      color:var(--text-color-03);
+      line-height: 1.25;
+    }
+  }
+  .subs-form__button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 28px 10px 29px;
+    border-radius: 4px;
+    background-color: var(--brand-color-01);
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px var(--shadow-color-08);
+  }
+  .button__label {
+    margin-right: 10px;
+    color: var(--background-color-01);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  }
+  .button__icon {
+    fill: var(--background-color-01);
+  }

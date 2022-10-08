@@ -1,0 +1,54 @@
+/* *****Styling body***** */
+body {
+    background-color: var(--background-color-01);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-01);
+    margin: 0;
+    letter-spacing: 0.03em;
+  }
+
+  /* Контейнер */
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /* Секції */
+.section {
+    padding: 94px 0 94px;
+  }
+
+  // Поведінка елементів
+.link {
+  &:hover, &:focus {
+    color: var(--brand-color-01);
+    fill:var(--brand-color-01);
+  }
+}
+.button {
+  &:hover, &:focus {
+    background-color: var(--highlight-button-color);
+    color: var(--background-color-01);
+  } 
+}
+
+/* Переходи і анімація */
+.link,
+.button,
+.input,
+.send-form__icon
+{
+  transition-property: 
+  color, fill, background-color, border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}

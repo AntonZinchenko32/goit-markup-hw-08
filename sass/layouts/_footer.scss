@@ -1,0 +1,51 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--brand-color-02);
+  }
+  .footer__container {
+    display: flex;
+  }
+  .footer__contacts {
+    margin-right: auto;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  .address__list {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  // Нижній відступ
+  .address__item {
+    @include bottom-indent (9px);
+  }
+  .address__link {
+    color: var(--background-color-01);
+  }
+  .address__link--mail,
+  .address__link--tel {
+    color: var(--text-color-03);
+  }
+  .footer__social-network {
+    margin-right: auto;
+  }
+  .social-network__title {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color:var(--background-color-01);
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .social-network__list {
+    display: flex;
+  }
+  .social-network__link--footer {
+    background-color: var(--icon-color-02);
+  }
+  .social-network__icon--footer {
+    fill:var(--background-color-01)
+  }

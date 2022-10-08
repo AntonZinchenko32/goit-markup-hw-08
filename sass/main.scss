@@ -1,0 +1,40 @@
+// Нормалізатор стилів
+@import 'utils/modern-normalize';
+
+// Змінні
+@import 'utils/vars';
+
+// mixins
+@import 'utils/mixins';
+
+// Приховує заголовки
+@import 'utils/visually-hidden';
+
+// Налаштування body та reset
+@import 'base/reset';
+@import 'base/base';
+
+// Всі компоненти сторінки, по черзі
+@import 'layouts/header';
+@import 'components/logo';
+@import 'components/nav';
+@import 'layouts/hero';
+@import 'layouts/benefits';
+@import 'layouts/desc';
+@import 'layouts/team';
+@import 'layouts/clients';
+@import 'layouts/footer';
+@import 'components/subs-form';
+
+// Соціальні мережі
+@import 'components/social-network';
+
+// Галерея-Сетка Карточек
+@import 'components/filters';
+@import 'components/card-set';
+@import 'components/overlay';
+
+// Модальное окно с формой отправки
+@import 'components/backdrop';
+@import 'components/modal-window';
+@import 'components/send-form';

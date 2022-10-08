@@ -1,0 +1,28 @@
+.gallery__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    
+    transform: translateY(200%);
+    transition: transform 400ms ease;
+    
+    // Виїзджає overlay при hover та focus по gallery__link
+    .gallery__link:hover &, 
+    .gallery__link:focus & {
+      transform: translateY(0);
+    }
+  }
+  .overlay__text {
+    padding: 0px 24px;
+    line-height: 1.56;
+    font-size: 18px;
+    color: var(--background-color-01);
+  }

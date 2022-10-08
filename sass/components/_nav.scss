@@ -1,0 +1,34 @@
+
+// Панель Навігації
+.nav {
+    margin-right: auto;
+  }
+  .nav__list {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .nav__item {
+    @include right-indent (50px);
+  }
+  .nav__link {
+    display: block;
+    padding: 32px 0;
+  }
+  .nav__link--active {
+    position: relative;
+    color: var(--brand-color-01);
+    // Підкреслення активного посилання блоку навігації
+    &::after {
+      content:'';
+      display: block;
+      position: absolute;
+      bottom:-1px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--brand-color-01);
+    }
+  }

@@ -1,0 +1,52 @@
+.benefits {
+    font-size: 14px;
+  }
+  .benefits__list {
+    display: flex;
+  }
+  .benefits__item {
+    @include right-indent (30px);
+    // Фон іконок
+    &::before {
+      content:'';
+      display: block;
+      margin-bottom: 30px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: var(--background-color-02);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  // Іконки benefits
+  .benefits__icon--antenna {
+    &::before {
+      background-image: url(../images/benefits-icon-antenna.svg);
+    }
+  }
+  .benefits__icon--clock {
+    &::before {
+      background-image: url(../images/benefits-icon-clock.svg);
+    }
+  }
+  .benefits__icon--diagram {
+    &::before {
+      background-image: url(../images/benefits-icon-diagram.svg);
+    }
+  }
+  .benefits__icon--astronaut {
+    &::before {
+      background-image: url(../images/benefits-icon-astronaut.svg);
+    }
+  }
+  .benefits__subtitle {
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .benefits__text {
+    color: var(--text-color-02);
+    line-height: 1.71;
+  }
