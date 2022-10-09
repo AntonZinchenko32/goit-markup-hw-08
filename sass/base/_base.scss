@@ -7,16 +7,14 @@ body {
     letter-spacing: 0.03em;
   }
 
-  /* Контейнер */
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
   /* Секції */
 .section {
-    padding: 94px 0 94px;
+    padding: 60px 0 60px;
+
+    // desktop
+    @media screen and (min-width:1200px) {
+      padding: 94px 0 94px;
+    }
   }
 
   // Поведінка елементів

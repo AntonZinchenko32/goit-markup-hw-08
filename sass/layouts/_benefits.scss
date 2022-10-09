@@ -1,11 +1,22 @@
-.benefits {
-    font-size: 14px;
-  }
+
   .benefits__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+
+    font-size: 14px;
+
+    // Desktop
+    @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+    }
   }
   .benefits__item {
-    @include right-indent (30px);
+    flex-basis: calc(100% / 1 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+
     // Фон іконок
     &::before {
       content:'';
@@ -17,7 +28,18 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    // Tablet
+    @media screen and (min-width:768px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    // Desktop
+    @media screen and (min-width:1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
   }
+
   // Іконки benefits
   .benefits__icon--antenna {
     &::before {
@@ -45,6 +67,12 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    // tablet & desktop
+    @media screen and (min-width:768px) {
+      text-align: start;
+    }
   }
   .benefits__text {
     color: var(--text-color-02);

@@ -13,6 +13,7 @@
 // Налаштування body та reset
 @import 'base/reset';
 @import 'base/base';
+@import 'base/container';
 
 // Всі компоненти сторінки, по черзі
 @import 'layouts/header';
@@ -38,3 +39,5 @@
 @import 'components/backdrop';
 @import 'components/modal-window';
 @import 'components/send-form';
+
+
