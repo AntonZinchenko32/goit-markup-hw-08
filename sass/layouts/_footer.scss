@@ -36,10 +36,7 @@
   .address__link--tel {
     color: var(--text-color-03);
   }
-  .footer__social-network {
-    margin-right: auto;
-  }
-  .social-network__title {
+  .footer__subtitle--social-network {
     display: inline-block;
     margin-top: 12px;
     margin-bottom: 20px;
@@ -47,9 +44,6 @@
     color:var(--background-color-01);
     font-size: 14px;
     line-height: 1.14;
-  }
-  .social-network__list {
-    display: flex;
   }
   .social-network__link--footer {
     background-color: var(--icon-color-02);

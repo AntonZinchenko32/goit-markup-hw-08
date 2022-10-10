@@ -18,7 +18,7 @@
     }
   }
   
-  .header__contacts {
+  .contacts {
     display: flex;
     color: var(--text-color-02);
     font-weight: 500;
@@ -42,6 +42,6 @@
     color: var(--text-color-02);
     fill:var(--text-color-02);
   }
-  .header__icon {
+  .contacts__icon {
     margin-right: 10px;
   }

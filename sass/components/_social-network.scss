@@ -1,4 +1,8 @@
 
+.social-network {
+  display: flex;
+}
+
 .social-network__item {
   @include right-indent (10px);
   }
@@ -12,6 +16,11 @@
     border-radius: 50%;
     
     &:hover, &:focus {
+      color:var(--background-color-01);
       background-color: var(--brand-color-01);
     }
+  }
+
+  .social-network__icon {
+    fill: currentColor;
   }

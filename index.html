@@ -26,34 +26,40 @@
         <!-- Меню навігації -->
         <nav class="nav">
           <ul class="list nav__list">
-            <li class="nav__item"><a class="link nav__link nav__link--active" href="index.html">Студия</a></li>
-            <li class="nav__item"><a class="link nav__link" href="portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#address">Контакты</a></li>
+            <li class="nav__item">
+              <a class="link nav__link nav__link--active href="index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#address">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <!-- Пошта і телефон Хедера -->
-        <ul class="list contacts header__contacts">
+        <ul class="list contacts">
           <li class="contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header__icon" width="16px" height="12px"><use href="./images/symbol-defs.svg#header-icon-envelope"></use></svg>
+              <svg class="contacts__icon" width="16px" height="12px"><use href="./images/symbol-defs.svg#header-icon-envelope"></use></svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts__item">
             <a class="link contacts__link" href="tel:+3809611111111">
-              <svg class="header__icon" width="10" height="16"><use href="./images/symbol-defs.svg#header-icon-smartphone"></use></svg>
+              <svg class="contacts__icon" width="10" height="16"><use href="./images/symbol-defs.svg#header-icon-smartphone"></use></svg>
               +3 096 111 11 11
             </a>
           </li>
         </ul>
 
         <!-- Кнопка мобільного меню -->
-        <button 
+        <button
         class="header__menu-button js-open-menu"
         type="button"
         aria-expanded="false"
-        aria-controls="mobile-menu" 
+        aria-controls="mobile-menu"
         >
           <svg width="40px" height="40px">
             <use href="./images/symbol-defs.svg#icon-menu-button-open">
@@ -141,7 +147,7 @@
       </section> -->
       
       <!-- Команда -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
@@ -267,7 +273,7 @@
 
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Clients -->
       <!-- <section class="section clients">
@@ -310,13 +316,16 @@
     </main>
     
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
+        <!-- Єлементи футера -->
         <ul class="list footer__list">
+          <!-- Лого -->
           <li class="footer__item">
             <a class="link logo" href="index.html">
               Web<span class="logo__part--white">Studio</span>
             </a>
+            <!-- Контакти Футера -->
             <address class="address" id="address">
               <ul class="list address__list">
                 <li class="address__item"><a class="link address__link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -325,9 +334,10 @@
               </ul>
             </address>
           </li>
+          <!-- Соціальні мережі -->
           <li class="footer__item">
-            <b class="social-network__title">присоединяйтесь</b>
-              <ul class="list social-network__list">
+            <b class="footer__subtitle--social-network">присоединяйтесь</b>
+              <ul class="list social-network social-network__footer">
                 <li class="social-network__item">
                   <a href="" class="link social-network__link social-network__link--footer">
                     <svg class="social-network__icon social-network__icon--footer" width="20px" height="20px"><use href="./images/symbol-defs.svg#social-network-icon-instagram"></use></svg>
@@ -350,8 +360,9 @@
                 </li>
               </ul>
           </li>
+          <!-- Форма підписки -->
           <li class="footer__item">
-            <label class="footer__label" for="email">подпишитесь на рассылку</label>
+            <label class="footer__subtitle--subs-form" for="email">подпишитесь на рассылку</label>
             <input class="input footer__input" type="email" name="email" id="email" placeholder="E-mail">
             <button class="button footer__button" type="submit">
               <b class="button__label">Подписаться</b>
@@ -362,7 +373,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
     
    
     <!-- Додаткові Вікна -->
@@ -425,7 +436,74 @@
     <script src="./js/modal.js"></script>
 
     <!-- Меню Mobile -->
-
+    <div class="menu js-menu-container" id="mobile-menu">
+      
+      <!-- Кнопка закриття -->
+      <button class="menu__close-button js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/symbol-defs.svg#icon-menu-button-close">
+          </use>
+        </svg>
+      </button>
+      <!-- Меню Навігації -->
+      <nav class="nav nav--menu">
+        <ul class="list nav__list nav__list--menu">
+          <li class="nav__item nav__item--menu">
+            <a class="link nav__link nav__link--menu nav__link--active nav__link--active--menu" href="index.html">Студия
+            </a>
+          </li>
+          <li class="nav__item nav__item--menu">
+            <a class="link nav__link nav__link--menu" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item nav__item--menu">
+            <a class="link nav__link nav__link--menu" href="#address">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Пошта і телефон Меню -->
+      <ul class="list contacts contacts--menu">
+        <li class="contacts__item contacts__item--menu">
+          <a class="link contacts__link contacts__link--menu contacts__link--menu--phone" href="tel:+380961111111">
+            +3 096 111 11 11
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--menu">
+          <a class="link contacts__link contacts__link--menu" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <!-- Соціальні мережі -->
+      <ul class="list social-network social-network__menu">
+        <li class="social-network__item social-network__item--menu">
+          <a href="" class="link social-network__link social-network__link--menu">
+            Instagram
+          </a>
+        </li>
+        <li class="social-network__item social-network__item--menu">
+          <a href="" class="link social-network__link social-network__link--menu">
+            Twitter
+          </a>
+        </li>
+        <li class="social-network__item social-network__item--menu">
+          <a href="" class="link social-network__link social-network__link--menu">
+            Facebook
+          </a>
+        </li>
+        <li class="social-network__item social-network__item--menu">
+          <a href="" class="link social-network__link social-network__link--menu">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 
 </html>

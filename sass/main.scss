@@ -15,11 +15,14 @@
 @import 'base/base';
 @import 'base/container';
 
+// Соціальні мережі
+@import 'components/social-network';
+
+
 // Всі компоненти сторінки, по черзі
 @import 'layouts/header';
 @import 'components/logo';
 @import 'components/nav';
-@import 'components/menu';
 @import 'layouts/hero';
 @import 'layouts/benefits';
 @import 'layouts/desc';
@@ -27,9 +30,9 @@
 @import 'layouts/clients';
 @import 'layouts/footer';
 @import 'components/subs-form';
+@import 'components/menu';
 
-// Соціальні мережі
-@import 'components/social-network';
+
 
 // Галерея-Сетка Карточек
 @import 'components/filters';

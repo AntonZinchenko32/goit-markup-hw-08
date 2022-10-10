@@ -60,15 +60,8 @@
     color: var(--text-color-02);
   }
   .team__social-network {
-    display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .social-network__link {
-    &:hover, &:focus {
-      color:var(--background-color-01);
-    }
-  }
-  .social-network__icon {
-    fill: currentColor;
-  }
+  
+  
