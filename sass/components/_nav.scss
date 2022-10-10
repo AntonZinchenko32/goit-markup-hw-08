@@ -1,7 +1,12 @@
 
 // Панель Навігації
 .nav {
+    display: none;
     margin-right: auto;
+
+    @media screen and (min-width:768px) {
+      display: block;
+    }
   }
   .nav__list {
     display: flex;
