@@ -594,8 +594,8 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--brand-color-02);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color-01)), to(var(--gradient-color-02))), url(../images/hero-img-team.jpg);
-  background-image: linear-gradient(to right, var(--gradient-color-01), var(--gradient-color-02)), url(../images/hero-img-team.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color-01)), to(var(--gradient-color-02))), url(../images/hero/hero-img-team.jpg);
+  background-image: linear-gradient(to right, var(--gradient-color-01), var(--gradient-color-02)), url(../images/hero/hero-img-team.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -687,19 +687,19 @@ body {
 }
 
 .benefits__icon--antenna::before {
-  background-image: url(../images/benefits-icon-antenna.svg);
+  background-image: url(../images/benefits/benefits-icon-antenna.svg);
 }
 
 .benefits__icon--clock::before {
-  background-image: url(../images/benefits-icon-clock.svg);
+  background-image: url(../images/benefits/benefits-icon-clock.svg);
 }
 
 .benefits__icon--diagram::before {
-  background-image: url(../images/benefits-icon-diagram.svg);
+  background-image: url(../images/benefits/benefits-icon-diagram.svg);
 }
 
 .benefits__icon--astronaut::before {
-  background-image: url(../images/benefits-icon-astronaut.svg);
+  background-image: url(../images/benefits/benefits-icon-astronaut.svg);
 }
 
 .benefits__subtitle {
