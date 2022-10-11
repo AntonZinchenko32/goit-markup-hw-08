@@ -2,9 +2,12 @@
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
+    padding: 48px 40px;
+
+    display: flex;
+    flex-direction: column;
 
     background-color: var(--background-color-01);
 
@@ -15,28 +18,6 @@
         transform: translateX(0%);
     }
 }
-
-// Кнопка Меню
-.header__menu-button {
-    margin-left: auto;
-    padding: 0px;
-    background-color: var(--background-color-01);
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-
-    &:hover, &:focus {
-      fill:var(--brand-color-01);
-    }
-    
-    @media screen and (min-width:768px) {
-      display: none;
-    }
-  }
 
   // Кнопка Закриття меню
 .menu__close-button {
@@ -62,6 +43,8 @@
 // Навигация
 .nav--menu {
     display: block;
+
+    margin-bottom: auto;
 }
 .nav__list--menu {
     display: block;
@@ -70,7 +53,7 @@
     
 }
 .nav__item--menu {
-    margin-bottom: 32px;
+    @include bottom-indent(32px);
 }
 .nav__link--menu {
     padding: 0;
@@ -85,14 +68,18 @@
 // Контакти
 .contacts--menu {
     display: block;
+    margin-bottom: 64px;
+
     font-size: 24px;
     line-height: 1.17;
+}
+.contacts__item--menu {
+    @include bottom-indent(32px);
 }
 .contacts__link--menu {
     padding: 0;
 }
 .contacts__link--menu--phone {
-    margin-bottom: 32px;
     font-size: 34px;
     line-height: 1.18;
     color: var(--brand-color-01);
@@ -102,6 +89,7 @@
 .social-network__item--menu {
     @include right-indent (10px);
 
+    // Линия разделитель между ссылками
     &:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid var(--border-color-04);
@@ -115,6 +103,7 @@
     height: fit-content;
 
     font-size: 18px;
+    font-weight: 500;
     line-height: 1.22;
     letter-spacing: 0.02em; 
   }
