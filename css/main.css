@@ -283,6 +283,10 @@ summary {
   --input-background-color: #2196F300;
   --border-color-03: rgba(255, 255, 255, 0.3);
   --border-color-04: rgba(33, 33, 33, 0.2);
+  --hero-gradient:
+  linear-gradient(to right,
+  var(--gradient-color-01),
+  var(--gradient-color-02));
 }
 
 /* Приховує заголовки */
@@ -594,13 +598,37 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--brand-color-02);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color-01)), to(var(--gradient-color-02))), url(../images/hero/hero-img-team.jpg);
-  background-image: linear-gradient(to right, var(--gradient-color-01), var(--gradient-color-02)), url(../images/hero/hero-img-team.jpg);
+  background-image: var(--hero-gradient), url(../images/hero/img-team_sm@1x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/img-team_sm@2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/img-team_md@1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/img-team_md@2x.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/img-team_lg@1x.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/img-team_lg@2x.png);
+  }
 }
 
 .hero__title {

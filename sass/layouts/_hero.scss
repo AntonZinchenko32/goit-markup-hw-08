@@ -2,11 +2,41 @@
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--brand-color-02);
+    
     background-image: 
-    linear-gradient(to right, 
-    var(--gradient-color-01), 
-    var(--gradient-color-02)), 
-    url(../images/hero/hero-img-team.jpg);
+    var(--hero-gradient), 
+    url(../images/hero/img-team_sm@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image:
+      var(--hero-gradient), 
+      url(../images/hero/img-team_sm@2x.png);
+    }
+
+    @media screen and (min-width:481px) {
+      background-image: 
+    var(--hero-gradient), 
+    url(../images/hero/img-team_md@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image:
+      var(--hero-gradient), 
+      url(../images/hero/img-team_md@2x.png);
+    }
+    }
+
+    @media screen and (min-width:769px) {
+      background-image: 
+    var(--hero-gradient), 
+    url(../images/hero/img-team_lg@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image:
+      var(--hero-gradient), 
+      url(../images/hero/img-team_lg@2x.png);
+    }
+    }
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
