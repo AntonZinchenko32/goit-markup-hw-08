@@ -4,47 +4,86 @@
   .header__container {  
     display: flex;
     align-items: center;
+
+    @media screen and (min-width:768px) {
+      justify-content: end;
+    }
   }
   .header__logo {
-    margin-right: 93px;
     padding: 16px 0;
 
     @media screen and (min-width:768px) {
+      margin-right: 88px;
       padding: 26px 0;
     }
 
     @media screen and (min-width:1200px) {
+      margin-right: 93px;
       padding: 24px 0;
     }
   }
   
   .contacts {
-    display: flex;
-    color: var(--text-color-02);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
     display: none;
 
+    color: var(--text-color-02);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
     @media screen and (min-width:768px) {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      padding: 21px 0;
+    }
+
+    @media screen and (min-width:1200px) {
+      flex-direction: row;
+      font-size: 14px;
+      line-height: 1.14;
+      padding: 0;
     }
   }
   .contacts__item {
-    @include right-indent(50px);
+    @include bottom-indent(10px);
+
+    @media screen and (min-width: 1200px) {
+      @include bottom-indent(0px);
+      @include right-indent(30px);
+    }
   }
   .contacts__link {
     display: flex;
     align-items: center;
-    padding: 32px 0;
     color: var(--text-color-02);
     fill:var(--text-color-02);
+
+    @media screen and (min-width: 1200px) {
+      padding: 32px 0;
+    }
   }
   .contacts__icon {
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
+
+    &--envelope {
+      @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
+    }
+    &--smartphone {
+      @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+      }
+    }
   }
+
 
   // Кнопка Меню
 .header__menu-button {
