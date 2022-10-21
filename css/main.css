@@ -650,7 +650,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--brand-color-02);
-  background-image: var(--hero-gradient), url(../images/hero/img-team_sm@1x.png);
+  background-image: var(--hero-gradient), url(./images/hero/img-team_sm@1x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -659,27 +659,27 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/img-team_sm@2x.png);
+    background-image: var(--hero-gradient), url(./images/hero/img-team_sm@2x.png);
   }
 }
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/img-team_md@1x.png);
+    background-image: var(--hero-gradient), url(./images/hero/img-team_md@1x.png);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/img-team_md@2x.png);
+    background-image: var(--hero-gradient), url(./images/hero/img-team_md@2x.png);
   }
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/img-team_lg@1x.png);
+    background-image: var(--hero-gradient), url(./images/hero/img-team_lg@1x.png);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/img-team_lg@2x.png);
+    background-image: var(--hero-gradient), url(./images/hero/img-team_lg@2x.png);
   }
 }
 
