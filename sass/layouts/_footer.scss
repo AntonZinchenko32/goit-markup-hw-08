@@ -6,10 +6,10 @@
   .footer__list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 
     @media screen and (min-width:768px) {
       flex-direction: row;
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width:1200px) {
@@ -23,7 +23,6 @@
 
     @media screen and (min-width:1200px) {
       text-align: start;
-      margin: 0;
       @include bottom-indent (0px);
     }
   }
@@ -48,11 +47,7 @@
   .address__link--tel {
     color: var(--text-color-03);
   }
-  .footer__item--social-network {
-    @media screen and (min-width:1200px) {
-      margin-left: 70px;
-    }
-  }
+
   .footer__subtitle {
     display: inline-block;
     text-transform: uppercase;
@@ -62,7 +57,22 @@
     margin-top: 12px;
     margin-bottom: 20px;
   }
+
+  .footer__item--social-network {
+
+    @media screen and (min-width:1200px) {
+      margin-left: 70px;
+    }
+  }
   
+  .footer__item--flex-container {
+    width: 100%;
+
+    @media screen and (min-width:1200px) {
+      margin-left: 93px;
+    }
+  }
+
   .social-network__link--footer {
     background-color: var(--icon-color-02);
   }
