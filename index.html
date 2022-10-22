@@ -71,15 +71,15 @@
     
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <!-- <section class="hero">
           <div class="container">
             <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
             <button class="button hero__button" data-modal-open type="button">Заказать услугу</button>
           </div>
-      </section>
+      </section> -->
       
       <!-- Benefits -->
-      <section class="section benefits">
+      <!-- <section class="section benefits">
         <div class="container">
           <ul class="list benefits__list">
 
@@ -113,10 +113,10 @@
 
           </ul>
         </div>
-      </section>
+      </section> -->
       
       <!-- Desc (Чим ми займаємось) -->
-      <section class="desc">
+      <!-- <section class="desc">
         <div class="container">
           <h2 class="desc__title">Чем мы занимаемся</h2>
           <ul class="list desc__list">
@@ -156,10 +156,10 @@
 
           </ul>
         </div>
-      </section>
+      </section> -->
       
       <!-- Команда -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
@@ -337,10 +337,10 @@
 
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Clients -->
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="list clients__list">
@@ -376,7 +376,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     
     <!-- Футер -->
@@ -385,7 +385,7 @@
         <!-- Єлементи футера -->
         <ul class="list footer__list">
           <!-- Лого -->
-          <li class="footer__item">
+          <li class="footer__item footer__item--contacts">
             <a class="link logo" href="index.html">
               Web<span class="logo__part--white">Studio</span>
             </a>
@@ -399,8 +399,8 @@
             </address>
           </li>
           <!-- Соціальні мережі -->
-          <li class="footer__item">
-            <b class="footer__subtitle--social-network">присоединяйтесь</b>
+          <li class="footer__item footer__item--social-network">
+            <b class="footer__subtitle footer__subtitle--social-network">присоединяйтесь</b>
               <ul class="list social-network social-network__footer">
                 <li class="social-network__item">
                   <a href="" class="link social-network__link social-network__link--footer">
@@ -425,15 +425,17 @@
               </ul>
           </li>
           <!-- Форма підписки -->
-          <li class="footer__item">
-            <label class="footer__subtitle--subs-form" for="email">подпишитесь на рассылку</label>
-            <input class="input footer__input" type="email" name="email" id="email" placeholder="E-mail">
-            <button class="button footer__button" type="submit">
-              <b class="button__label">Подписаться</b>
-              <svg class="button__icon" width="20px" height="20px">
-                <use href="./images/icons.svg#icon-subs"></use>
-              </svg>
-            </button>
+          <li class="footer__item footer__item--flex-container">
+            <label class="footer__subtitle footer__subtitle--subs-form" for="email">подпишитесь на рассылку</label>
+            <form class="subs-form">
+              <input class="input footer__input" type="email" name="email" id="email" placeholder="E-mail">
+              <button class="button footer__button" type="submit">
+                <b class="button__label">Подписаться</b>
+                <svg class="button__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-subs"></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
       </div>

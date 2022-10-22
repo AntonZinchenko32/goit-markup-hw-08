@@ -11,14 +11,26 @@
     @media screen and (min-width:768px) {
       flex-direction: row;
     }
+
+    @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+    }
   }
   .footer__item {
     margin: 0 auto;
     text-align: center;
     @include bottom-indent (60px);
+
+    @media screen and (min-width:1200px) {
+      text-align: start;
+      margin: 0;
+      @include bottom-indent (0px);
+    }
   }
+
   .address {
     margin-top: 20px;
+    white-space: nowrap;
   }
   .address__list {
     font-size: 14px;
@@ -36,15 +48,21 @@
   .address__link--tel {
     color: var(--text-color-03);
   }
-  .footer__subtitle--social-network {
+  .footer__item--social-network {
+    @media screen and (min-width:1200px) {
+      margin-left: 70px;
+    }
+  }
+  .footer__subtitle {
     display: inline-block;
-    margin-top: 12px;
-    margin-bottom: 20px;
     text-transform: uppercase;
     color:var(--background-color-01);
     font-size: 14px;
     line-height: 1.14;
+    margin-top: 12px;
+    margin-bottom: 20px;
   }
+  
   .social-network__link--footer {
     background-color: var(--icon-color-02);
   }
