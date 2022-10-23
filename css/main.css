@@ -402,6 +402,22 @@ body {
   }
 }
 
+.modal-container {
+  min-width: 290px;
+  padding: 40px 15px;
+}
+@media screen and (min-width: 480px) {
+  .modal-container {
+    padding: 40px;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-container {
+    max-width: 528px;
+  }
+}
+
 .social-network {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1449,7 +1465,6 @@ body {
   visibility: visible;
   top: 50%;
   left: 50%;
-  padding: 40px;
   background-color: var(--background-color-01);
   -webkit-box-shadow: 0px 1px 3px var(--shadow-color-01), 0px 1px 1px var(--shadow-color-02), 0px 2px 1px var(--shadow-color-03);
           box-shadow: 0px 1px 3px var(--shadow-color-01), 0px 1px 1px var(--shadow-color-02), 0px 2px 1px var(--shadow-color-03);
@@ -1596,11 +1611,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  white-space: nowrap;
   margin-bottom: 30px;
   line-height: 1.17;
   font-size: 12px;
   color: var(--text-color-02);
+}
+@media screen and (min-width: 480px) {
+  .send-form__checkbox-label {
+    white-space: nowrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .send-form__checkbox-label {

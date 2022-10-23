@@ -12,3 +12,17 @@
         max-width: 1200px;
     }
   }
+
+.modal-container {
+    min-width: 290px;
+    padding: 40px 15px;
+
+    @media screen and (min-width:480px) {
+        padding: 40px;
+        max-width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 528px;
+    }
+}
