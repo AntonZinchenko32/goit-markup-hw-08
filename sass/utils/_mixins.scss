@@ -5,7 +5,8 @@
   }
   }
 
-  // Нижній відступ крім останнього нащадка!
+
+ // Нижній відступ крім останнього нащадка!
   @mixin bottom-indent($indent) {
     &:not(:last-child) {
       margin-bottom: $indent;
